@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gym.css">
+    <style>
+        body{
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px;
+            padding: 0px;
+            background-image: url('man.jpg');
+            color: white;
+        }
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 35px;
+          
+        }
+        .left img{
+            width: 45px;
+            filter: invert(100%);
+        }
+        .left div{
+            line-height: 15px;
+            font-size: 15px;
+        }
+        .mid{
+            /* border: 2px solid yellow; */
+            display: block;
+            width: 50%;
+            margin: 10px auto;
+
+        }
+        .right{
+            /* border: 2px solid green; */
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        .navbar{
+            display: inline-block;
+            list-style: none;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+            padding: 0px 30px;
+        }  
+        .navbar li a:hover{
+            text-decoration: underline;
+            color: rgb(147, 232, 56);
+        }
+        .btn{
+            font-family: 'Baloo Bhai', cursive;
+            margin: 10px 10px;
+            padding: 4px 10px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: gray;
+        }
+
+        .container{
+            margin: 30px 400px;
+            padding: 14px 90px;
+            /* border: 2px solid red; */
+            border-radius: 30px;
+            width: 30%;
+        }
+
+        .form input{
+            font-family: 'Baloo Bhai', cursive;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 80%;
+            text-align: center;
+            padding: 2px 2px;
+            display: block;
+            margin: 15px auto;
+            font-size: 20px;
+        }
+
+        .container h4{
+            text-align: center;
+            font-size: 30px;
+            line-height: 0px;
+        }
+
+        .submit{
+            font-family: 'Baloo Bhai', cursive;
+            display: block;
+            margin: 20px auto;
+            width: 30%;
+            cursor: pointer;
+        }
+
+        .submit:hover{
+            background-color: grey;
+        }
+
+        .container2{
+            display: inline-block;
+            /* width: 30%;
+            margin: 10px auto; */
+            position: relative;
+            left: 630px;
+            bottom: 50px;
+            font-size: 30px;
+            line-height: 0px;
+
+        }
+        #img1{
+            display: block;
+            position: absolute;
+            left: 450px;
+            bottom: 20px;
+        }
+        #img2{
+            display: block;
+            position: absolute;
+            left: 700px;
+            bottom: 20px;
+        }
+        #img3{
+            display: block;
+            position: absolute;
+            right: 530px;
+            bottom: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+   <header>
+    <div class="left">
+        <img src="fitness.png" alt="cant load">
+        <div>RK-Fitness</div>
+    </div>
+
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Fitness-course</a></li>
+            <li><a href="#">Contact-us</a></li>
+            <li><a href="#">About-us</a></li>
+        </ul>
+    </div>
+
+    <div class="right">
+        <button class="btn">Email-us</button>
+    </div>
+   </header>
+   <div class="container">
+       <h4>Log-in</h4>
+            <form action="nobody.php" method="post">
+               <div class="form">
+                <input type="text" name="myname" id="name" placeholder="your name">
+               </div>
+
+               <div class="form">
+                <input type="number" name="myage" id="age" placeholder="age">
+               </div>
+
+               <div class="form">
+                <input type="text" name="mygender" id="gender" placeholder="Gender">
+               </div>
+
+               <div class="form">
+                <input type="text" name="myaddress" id="address" placeholder="area/door-no/city">
+               </div>
+
+               <div class="form">
+                <input type="number" name="mynumber" id="number" placeholder="phone-no">
+               </div>
+
+               <div class="form">
+                <input type="email" name="mymail" id="mail" placeholder="Email-id">
+               </div>
+
+               <button class="submit">Submit</button>
+            </form>
+        </div>
+
+    <div class="container2">
+        <h4>Follow us on</h4> 
+    </div> 
+
+    <div>
+        <a href="#"><img src="ig-instagram.png" alt="cant load" id="img1" width="50px" height="50px"></a>
+    </div>
+    <div>
+        <a href="#"><img src="facebook-app.png" alt="cant load" id="img2" width="50px" height="50px"></a>
+    </div>
+    <div>
+        <a href="#"><img src="wa-whatsapp.png" alt="cant load" id="img3" width="50px" height="50px"></a>
+    </div>
+    
+
+</body>
+</html>
